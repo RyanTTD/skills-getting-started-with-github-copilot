@@ -76,19 +76,33 @@ section h3 {
 
 .participants-section {
   margin-top: 12px;
-  padding-top: 10px;
-  border-top: 1px solid #e0e0e0;
+  padding: 14px 16px;
+  border-top: 1px solid #dbe4ff;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #f8faff 0%, #eef3ff 100%);
 }
 
 .participants-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   font-weight: bold;
   color: #1a237e;
-  margin-bottom: 6px;
+  margin-bottom: 10px;
+}
+
+.participants-title::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #1a237e 0%, #42a5f5 100%);
+  box-shadow: 0 0 0 4px rgba(66, 165, 245, 0.12);
 }
 
 .participants-list {
   list-style: none;
-  padding: 0;
+  padding-left: 0;
   margin: 0;
 }
 
@@ -108,6 +122,7 @@ section h3 {
   border-radius: 8px;
   background: linear-gradient(180deg, #ffffff 0%, #eef2ff 100%);
   border: 1px solid #dbe4ff;
+  overflow-wrap: anywhere;
 }
 
 .participant-email {
